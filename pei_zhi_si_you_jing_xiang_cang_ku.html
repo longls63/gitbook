@@ -1,0 +1,335 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>配置私有镜像仓库 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chuang_jian_kubernetes_ji_qun.html" />
+    
+    
+    <link rel="prev" href="pei_zhi_kong_zhi_tai_zu_jian.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="shou_dong_an_zhuang.html">
+            
+                <a href="shou_dong_an_zhuang.html">
+            
+                    
+                    手动安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="pei_zhi_kong_zhi_tai_zu_jian.html">
+            
+                <a href="pei_zhi_kong_zhi_tai_zu_jian.html">
+            
+                    
+                    配置控制台组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="pei_zhi_si_you_jing_xiang_cang_ku.html">
+            
+                <a href="pei_zhi_si_you_jing_xiang_cang_ku.html">
+            
+                    
+                    配置私有镜像仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="chuang_jian_kubernetes_ji_qun.html">
+            
+                <a href="chuang_jian_kubernetes_ji_qun.html">
+            
+                    
+                    创建Kubernetes集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="qi_dong_dns_fu_wu.html">
+            
+                <a href="qi_dong_dns_fu_wu.html">
+            
+                    
+                    启动DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="pei_zhi_jian_kong_bao_jing_zu_jian.html">
+            
+                <a href="pei_zhi_jian_kong_bao_jing_zu_jian.html">
+            
+                    
+                    配置监控报警组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="pei_zhi_webssh_zu_jian.html">
+            
+                <a href="pei_zhi_webssh_zu_jian.html">
+            
+                    
+                    配置WebSSH组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >配置私有镜像仓库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x914D;&#x7F6E;&#x79C1;&#x6709;&#x955C;&#x50CF;&#x4ED3;&#x5E93;">&#x914D;&#x7F6E;&#x79C1;&#x6709;&#x955C;&#x50CF;&#x4ED3;&#x5E93;</h1><hr><h2 id="&#x542F;&#x52A8;&#x79C1;&#x6709;&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x5BB9;&#x5668;">&#x542F;&#x52A8;&#x79C1;&#x6709;&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#x5BB9;&#x5668;</h2><p>TrcloudOS&#x53EF;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5B98;&#x65B9;&#x7684;registry&#x955C;&#x50CF;&#xFF0C;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x5B58;&#x50A8;&#x4E86;&#x6240;&#x6709;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x5982;&#x679C;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x53D1;&#x751F;&#x4E8B;&#x6545;&#xFF0C;&#x4F1A;&#x9020;&#x6210;&#x5DE8;&#x5927;&#x635F;&#x5931;&#xFF0C;&#x4E25;&#x91CD;&#x5F71;&#x54CD;&#x4E1A;&#x52A1;&#xFF0C;&#x56E0;&#x6B64;&#x5EFA;&#x8BAE;&#x5C06;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x6302;&#x8F7D;&#x5230;&#x672C;&#x5730;&#x76EE;&#x5F55;&#xFF0C;&#x4FDD;&#x8BC1;&#x955C;&#x50CF;&#x6587;&#x4EF6;&#x6C38;&#x4E45;&#x53EF;&#x7528;&#x3002;&#x542F;&#x52A8;&#x8FC7;&#x7A0B;&#x8BF7;&#x53C2;&#x8003;Docker Hub&#x5B98;&#x65B9;&#x8BF4;&#x660E;&#x3002;</p><h3 id="&#x6CE8;&#x610F;&#xFF1A;">&#x6CE8;&#x610F;&#xFF1A;</h3><p>TrcloudOS&#x76EE;&#x524D;&#x4EC5;&#x652F;&#x6301;v2&#x7248;&#x672C;registry&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x90E8;&#x7F72;registry&#x7248;&#x672C;&#x6B63;&#x786E;&#x3002;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x6709;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#xFF0C;&#x53EF;&#x4EE5;&#x8DF3;&#x8FC7;&#x8BE5;&#x6B65;&#x9AA4;&#xFF0C;&#x8FDB;&#x5165;&#x4E0B;&#x4E00;&#x6B65;&#x914D;&#x7F6E;&#x3002;</p><h3 id="&#x955C;&#x50CF;">&#x955C;&#x50CF;</h3><p><a href="http://172.30.248.190:5000/registry:2.3.0" target="_blank">http://172.30.248.190:5000/registry:2.3.0</a></p><h3 id="&#x542F;&#x52A8;&#x547D;&#x4EE4;">&#x542F;&#x52A8;&#x547D;&#x4EE4;</h3><p>sudo docker run --restart=always -d \</p><pre><code>-p &lt;_registry_port&gt;:5000 \
+-v &lt;_local_data&gt;:&lt;_contain_registry&gt;
+--name private-registry \
+http://172.30.248.190:5000/registry:2.3.0</code></pre>
+<h3 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;</h3><p>_registry_port&#xFF1A;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x5BF9;&#x5916;&#x670D;&#x52A1;&#x7AEF;&#x53E3;</p><p>_local_data: &#x672C;&#x5730;&#x6302;&#x8F7D;&#x76EE;&#x5F55;</p><p>_contain_registry: &#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x5730;&#x5740;</p><h3 id="&#x6837;&#x4F8B;">&#x6837;&#x4F8B;</h3><p>sudo docker run -d --restart=always \</p><pre><code>-p 5000:5000 \
+--restart=always 
+-v /registries:/var/lib/registry registry:2.3.0
+--name private-registry \
+http://172.30.248.190:5000/registry:2.3.0</code></pre>
+<h3 id="&#x9A8C;&#x8BC1;">&#x9A8C;&#x8BC1;</h3><p>&#x901A;&#x8FC7;curl -L http://&lt;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x7684;&#x670D;&#x52A1;&#x5730;&#x5740;&gt;/v2/&#x67E5;&#x770B;&#x79C1;&#x6709;&#x4ED3;&#x5E93;&#x7684;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x5982;&#x679C;&#x663E;&#x793A;&quot;{}&quot;&#x8BF4;&#x660E;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#xFF0C;&#x5982;:</p><p>curl -L <a href="http://10.10.10.10:5000/v2/" target="_blank">http://10.10.10.10:5000/v2/</a></p><p>{}</p><h3 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h3><p><a href="https://github.com/docker/distribution" target="_blank">https://github.com/docker/distribution</a></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="pei_zhi_kong_zhi_tai_zu_jian.html" class="navigation navigation-prev " aria-label="Previous page: 配置控制台组件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chuang_jian_kubernetes_ji_qun.html" class="navigation navigation-next " aria-label="Next page: 创建Kubernetes集群">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"配置私有镜像仓库","level":"1.2.2","depth":2,"next":{"title":"创建Kubernetes集群","level":"1.2.3","depth":2,"path":"chuang_jian_kubernetes_ji_qun.md","ref":"chuang_jian_kubernetes_ji_qun.md","articles":[]},"previous":{"title":"配置控制台组件","level":"1.2.1","depth":2,"path":"pei_zhi_kong_zhi_tai_zu_jian.md","ref":"pei_zhi_kong_zhi_tai_zu_jian.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pei_zhi_si_you_jing_xiang_cang_ku.md","mtime":"2016-09-27T06:28:54.040Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-27T06:47:17.528Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

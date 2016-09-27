@@ -1,0 +1,378 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>配置监控报警组件 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="pei_zhi_webssh_zu_jian.html" />
+    
+    
+    <link rel="prev" href="qi_dong_dns_fu_wu.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="shou_dong_an_zhuang.html">
+            
+                <a href="shou_dong_an_zhuang.html">
+            
+                    
+                    手动安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="pei_zhi_kong_zhi_tai_zu_jian.html">
+            
+                <a href="pei_zhi_kong_zhi_tai_zu_jian.html">
+            
+                    
+                    配置控制台组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="pei_zhi_si_you_jing_xiang_cang_ku.html">
+            
+                <a href="pei_zhi_si_you_jing_xiang_cang_ku.html">
+            
+                    
+                    配置私有镜像仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="chuang_jian_kubernetes_ji_qun.html">
+            
+                <a href="chuang_jian_kubernetes_ji_qun.html">
+            
+                    
+                    创建Kubernetes集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="qi_dong_dns_fu_wu.html">
+            
+                <a href="qi_dong_dns_fu_wu.html">
+            
+                    
+                    启动DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="pei_zhi_jian_kong_bao_jing_zu_jian.html">
+            
+                <a href="pei_zhi_jian_kong_bao_jing_zu_jian.html">
+            
+                    
+                    配置监控报警组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="pei_zhi_webssh_zu_jian.html">
+            
+                <a href="pei_zhi_webssh_zu_jian.html">
+            
+                    
+                    配置WebSSH组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >配置监控报警组件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x914D;&#x7F6E;&#x76D1;&#x63A7;&#x62A5;&#x8B66;&#x7EC4;&#x4EF6;">&#x914D;&#x7F6E;&#x76D1;&#x63A7;&#x62A5;&#x8B66;&#x7EC4;&#x4EF6;</h1><hr><p>TrcloudOS&#x4E2D;&#x7684;&#x76D1;&#x63A7;&#x90E8;&#x5206;&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x5C0F;&#x7C73;open-falcon&#x6846;&#x67B6;&#xFF0C;&#x5E76;&#x9488;&#x5BF9;TrcloudOS&#x4E2D;&#x7684;&#x76D1;&#x63A7;&#x9700;&#x6C42;&#x5BF9;&#x4E00;&#x4E9B;&#x6A21;&#x5757;&#x8FDB;&#x884C;&#x4E86;&#x4E8C;&#x6B21;&#x5F00;&#x53D1;&#x3002;TrcloudOS&#x4E2D;&#x76D1;&#x63A7;&#x6A21;&#x5757;&#x4E0E;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#x57FA;&#x672C;&#x72EC;&#x7ACB;&#xFF0C;&#x6BCF;&#x4E00;&#x6A21;&#x5757;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x955C;&#x50CF;&#x65B9;&#x5F0F;&#x542F;&#x52A8;&#xFF0C;&#x4F7F;&#x7528;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5728;&#x5404;&#x6A21;&#x5757;&#x4E4B;&#x95F4;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x4FE1;&#x606F;&#x3002;&#x5176;&#x4E2D;agent&#x662F;&#x76D1;&#x63A7;&#x6570;&#x636E;&#x4E0A;&#x62A5;&#x7EC4;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x96C6;&#x7FA4;&#x4E2D;&#x6BCF;&#x53F0;&#x4E3B;&#x673A;&#x90E8;&#x7F72;&#xFF0C;&#x5176;&#x4F59;&#x7EC4;&#x4EF6;&#x53EF;&#x5355;&#x72EC;&#x90E8;&#x7F72;&#x3002;&#x4E3B;&#x8981;&#x6A21;&#x5757;&#x5982;&#x4E0B;&#x8868;&#x6240;&#x793A;&#xFF1A;</p><table>
+<thead>
+<tr><th>&#x6A21;&#x5757;&#x540D;&#x79F0;</th>
+<th>&#x529F;&#x80FD;&#x8BF4;&#x660E;</th>
+<th>&#x955C;&#x50CF;&#x5730;&#x5740;</th>
+<th>&#x662F;&#x5426;&#x5728;falcon&#x539F;&#x751F;&#x7EC4;&#x4EF6;&#x57FA;&#x7840;&#x4E0A;&#x8FDB;&#x884C;&#x4E8C;&#x6B21;&#x5F00;&#x53D1;</th>
+</tr></thead><tbody>
+<tr><td>agent</td>
+<td>&#x76D1;&#x63A7;&#x4FE1;&#x606F;&#x4E0A;&#x62A5;</td>
+<td>172.30.248.190:5000/domeos/agent:2.5</td>
+<td>&#x662F;</td>
+</tr><tr><td>transfer</td>
+<td>&#x76D1;&#x63A7;&#x4FE1;&#x606F;&#x8F6C;&#x53D1;</td>
+<td>172.30.248.190:5000/domeos/transfer:0.0.15</td>
+<td>&#x5426;&#xFF0C;&#x4EC5;&#x4FEE;&#x6539;MIN_STEP&#x4E3A;10</td>
+</tr><tr><td>graph</td>
+<td>&#x76D1;&#x63A7;&#x4FE1;&#x606F;&#x5B58;&#x50A8;</td>
+<td>172.30.248.190:5000/domeos/graph:0.5.7</td>
+<td>&#x5426;&#xFF0C;&#x4EC5;&#x4FEE;&#x6539;MIN_STEP&#x4E3A;10</td>
+</tr><tr><td>query</td>
+<td>&#x76D1;&#x63A7;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;</td>
+<td>172.30.248.190:5000/domeos/query:1.5.1</td>
+<td>&#x5426;</td>
+</tr><tr><td>hbs</td>
+<td>&#x5FC3;&#x8DF3;&#x670D;&#x52A1;&#x5668;</td>
+<td>172.30.248.190:5000/domeos/hbs:1.1.0</td>
+<td>&#x5426;</td>
+</tr><tr><td>judge</td>
+<td>&#x62A5;&#x8B66;&#x4E8B;&#x4EF6;&#x5224;&#x65AD;</td>
+<td>172.30.248.190:5000/domeos/judge:2.0.2</td>
+<td>&#x5426;</td>
+</tr><tr><td>alarm</td>
+<td>&#x62A5;&#x8B66;&#x4E8B;&#x4EF6;&#x5904;&#x7406;</td>
+<td>172.30.248.190:5000/domeos/alarm:1.0</td>
+<td>&#x662F;</td>
+</tr><tr><td>sender</td>
+<td>&#x62A5;&#x8B66;&#x4E8B;&#x4EF6;&#x53D1;&#x9001;</td>
+<td>172.30.248.190:5000/domeos/sender:1.0</td>
+<td>&#x662F;</td>
+</tr><tr><td>nodata</td>
+<td>&#x5047;&#x6570;&#x636E;&#x586B;&#x5145;</td>
+<td>172.30.248.190:5000/domeos/nodata:0.0.8</td>
+<td>&#x5426;</td>
+</tr><tr><td>redis</td>
+<td>&#x62A5;&#x8B66;&#x4E8B;&#x4EF6;&#x961F;&#x5217;</td>
+<td>172.30.248.190:5000/domeos/redis:3.0.7</td>
+<td>&#x5426;</td>
+</tr></tbody></table>
+
+<p><strong>&#x6CE8;&#x610F;</strong></p><p>1.&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x65F6;&#xFF0C;&#x4F20;&#x5165;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E2D;&#x542B;&#x6709;&#x8F6C;&#x4E49;&#x53CC;&#x5F15;&#x53F7;&#x7684;&#x5730;&#x65B9;&#x5F15;&#x53F7;&#x4E0D;&#x53EF;&#x7701;&#x7565;&#xFF0C;&#x987B;&#x6309;&#x7167;&#x6837;&#x4F8B;&#x683C;&#x5F0F;&#x8BBE;&#x5B9A;&#x3002;</p><p>2.&#x76F4;&#x63A5;restart&#x7EC4;&#x4EF6;&#x5BB9;&#x5668;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x7EC4;&#x4EF6;&#x542F;&#x52A8;&#x5931;&#x8D25;&#x6216;&#x8FD0;&#x884C;&#x4E0D;&#x6B63;&#x5E38;&#x3002;&#x987B;&#x68C0;&#x6D4B;&#x5404;&#x7EC4;&#x4EF6;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x53CA;&#x65E5;&#x5FD7;&#xFF0C;&#x82E5;&#x4E0D;&#x6B63;&#x5E38;&#x987B;&#x81EA;&#x884C;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x7EC4;&#x4EF6;&#x3002;</p><h1 id="domeosagent">domeos/agent</h1><p>domeos/agent&#x6A21;&#x5757;&#x662F;&#x4EE5;open-falcon&#x539F;&#x751F;agent&#x6A21;&#x5757;&#x4E3A;&#x57FA;&#x7840;&#xFF0C;&#x4E3A;&#x9002;&#x5E94;TrcloudOS&#x76D1;&#x63A7;&#x9700;&#x6C42;&#x800C;&#x8BBE;&#x8BA1;&#x4FEE;&#x6539;&#x7684;&#xFF0C;&#x4E0E;&#x539F;&#x751F;open-falcon&#x7684;agent&#x4E3B;&#x8981;&#x533A;&#x522B;&#x4E3A;&#xFF1A;</p><ul><li><p>&#x5728;&#x914D;&#x7F6E;&#x6A21;&#x677F;&#x4E2D;&#x5BF9;&#x5F88;&#x5927;&#x90E8;&#x5206;&#x76D1;&#x63A7;&#x9879;&#x8BBE;&#x7F6E;&#x4E86;&#x5FFD;&#x7565;&#xFF0C;&#x4EC5;&#x4FDD;&#x7559;&#x4E00;&#x4E9B;&#x7CFB;&#x7EDF;&#x57FA;&#x7840;&#x76D1;&#x63A7;&#x9879;</p></li>
+<li><p>&#x5D4C;&#x5165;&#x4E86;cadvisor&#x4EE3;&#x7801;&#xFF0C;&#x5B9E;&#x73B0;&#x5BB9;&#x5668;&#x76D1;&#x63A7;&#xFF0C;&#x5176;tag&#x4E3A;id={&#x5BB9;&#x5668;64&#x4F4D;id}</p></li>
+<li><p>&#x955C;&#x50CF;&#x4E2D;&#x96C6;&#x6210;&#x4E86;TrcloudOS WebSSH&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x9ED8;&#x8BA4;&#x76D1;&#x542C;2222&#x7AEF;&#x53E3;&#x4E0A;&#x7684;SSH&#x8BF7;&#x6C42;&#xFF0C;&#x914D;&#x5408;WebSSH Server&#x5B9E;&#x73B0;Web&#x7AEF;&#x5BB9;&#x5668;&#x767B;&#x5F55;</p></li></ul>
+<p>domeos/agent&#x6A21;&#x5757;&#x9700;&#x5728;&#x96C6;&#x7FA4;&#x4E2D;&#x6240;&#x6709;node&#x8282;&#x70B9;&#x90E8;&#x7F72;&#x3002;&#x82E5;&#x4F7F;&#x7528;TrcloudOS&#x7ED9;&#x5B9A;&#x7684;&#x811A;&#x672C;&#x6DFB;&#x52A0;&#x4E3B;&#x673A;&#xFF0C;&#x4E14;&#x6307;&#x5B9A;--start-agent&#x53C2;&#x6570;&#x4E3A;true&#xFF0C;&#x9ED8;&#x8BA4;&#x5C06;&#x81EA;&#x52A8;&#x542F;&#x52A8;agent&#x5BB9;&#x5668;&#xFF1B;&#x5426;&#x5219;&#x9700;&#x8981;&#x624B;&#x52A8;&#x542F;&#x52A8;agent&#x5BB9;&#x5668;&#x3002;</p><p><strong>&#x542F;&#x52A8;&#x547D;&#x4EE4;</strong></p><p><code>sudo docker run -d --restart=always \ -p 2222:2222 \ -p &lt;_agent_http_port&gt;:1988 \ -e HOSTNAME=&quot;\&quot;&lt;_hostname&gt;\&quot;&quot; \ -e TRANSFER_ADDR=&quot;[&lt;_transfer_addr&gt;]&quot; \ -e TRANSFER_INTERVAL=&quot;&lt;_interval&gt;&quot; \ -e HEARTBEAT_ENABLED=&quot;&lt;_heartbeat_enable&gt;&quot; \ -e HEARTBEAT_ADDR=&quot;\&quot;&lt;_heartbeat&gt;\&quot;&quot; \ -v /:/rootfs:ro \ -v /var/run:/var/run:rw \ -v /sys:/sys:ro \ -v &lt;_docker_graph_path&gt;:&lt;_docker_graph_path&gt; \ --name agent \ 172.30.248.190:5000/domeos/agent:2.5</code></p><p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p><p><code>_agent_http_port: agent&#x670D;&#x52A1;http&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x3001;&#x8C03;&#x8BD5;&#x7B49;&#x3002;</code></p><p><code>_hostname: &#x76D1;&#x63A7;&#x7CFB;&#x7EDF;&#x4E2D;&#x4E3B;&#x673A;&#x7684;endpoint&#x540D;&#xFF0C;&#x9700;&#x4E0E;kubernetes&#x4E2D;&#x6DFB;&#x52A0;node&#x65F6;&#x914D;&#x7F6E;&#x7684;hostname&#x76F8;&#x540C;&#x3002;TrcloudOS&#x6DFB;&#x52A0;&#x4E3B;&#x673A;&#x811A;&#x672C;&#x4E2D;&#x4F7F;&#x7528;&#x4E3B;&#x673A;&#x8FD0;&#x884C;hostname&#x547D;&#x4EE4;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x3002;</code></p><p><code>_transfer_addr: transfer&#x7684;rpc&#x5730;&#x5740;&#xFF0C;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x591A;&#x4E2A;&#x3002;&#x6CE8;&#x610F;&#x6BCF;&#x4E2A;IP:Port&#x9700;&#x52A0;&#x53CC;&#x5F15;&#x53F7;&#xFF0C;&#x591A;&#x4E2A;IP:Port&#x4E4B;&#x95F4;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;TrcloudOS&#x6DFB;&#x52A0;&#x4E3B;&#x673A;&#x811A;&#x672C;&#x4E2D;&#x4F7F;&#x7528;TrcloudOS&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x4E2D;&#x7684;transfer&#x914D;&#x7F6E;&#x3002;</code></p><p><code>_interval: &#x76D1;&#x63A7;&#x6570;&#x636E;&#x4E0A;&#x62A5;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x79D2;(s)&#x3002;TrcloudOS&#x4E2D;&#x652F;&#x6301;&#x7684;&#x6700;&#x5C0F;&#x4E0A;&#x62A5;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x4E3A;10s&#x3002;TrcloudOS&#x6DFB;&#x52A0;&#x4E3B;&#x673A;&#x811A;&#x672C;&#x4E2D;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x4E3A;10s&#x3002;</code></p><p><code>_heartbeat_enable: &#x662F;&#x5426;&#x8FDE;&#x63A5;&#x5FC3;&#x8DF3;&#x670D;&#x52A1;&#x5668;(hbs)&#xFF0C;&#x53EF;&#x8BBE;&#x7F6E;&#x4E3A;true&#x6216;false&#x3002;&#x82E5;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x62A5;&#x8B66;&#x670D;&#x52A1;&#xFF0C;&#x5FC5;&#x987B;&#x5C06;&#x5176;&#x914D;&#x7F6E;&#x4E3A;true&#x3002;TrcloudOS&#x6DFB;&#x52A0;&#x4E3B;&#x673A;&#x811A;&#x672C;&#x4E2D;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x4E3A;true&#x3002;</code></p><p><code>_heartbeat: &#x5FC3;&#x8DF3;&#x670D;&#x52A1;&#x5668;(hbs)rpc&#x76D1;&#x542C;&#x5730;&#x5740;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002;TrcloudOS&#x6DFB;&#x52A0;&#x4E3B;&#x673A;&#x811A;&#x672C;&#x4E2D;&#x4F7F;&#x7528;TrcloudOS&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x4E2D;&#x7684;hbs&#x914D;&#x7F6E;&#x3002;</code></p><p><code>_docker_graph_path: docker&#x542F;&#x52A8;&#x65F6;&#x914D;&#x7F6E;&#x7684;graph&#x76EE;&#x5F55;&#x8DEF;&#x5F84;(-g&#x53C2;&#x6570;)&#x3002;&#x82E5;&#x6CA1;&#x6709;&#x914D;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;/var/lib/docker&#x76EE;&#x5F55;</code></p><p>&#x5176;&#x4F59;&#x53C2;&#x6570;&#x53EF;&#x53C2;&#x7167;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;docker/cfg.template.json&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p><p><strong>&#x6837;&#x4F8B;</strong></p><p>sudo docker run -d --restart=always \</p><p>-p 2222:2222 \</p><p>-p 1988:1988 \</p><p>-e HOSTNAME=&quot;\&quot;test-host\&quot;&quot; \</p><p>-e TRANSFER_ADDR[\&quot;10.10.10.10:8433\&quot;,\&quot;10.10.10.11:8433\&quot;]&quot; \</p><p>-e TRANSFER_INTERVAL=&quot;10&quot; \</p><p>-e HEARTBEAT_EN__ABLED=&quot;true&quot; \</p><p>-e HEARTBEAT_ADDR=&quot;\&quot;10.10.10.10:6030\&quot;&quot; \</p><p>-v /:/rootfs:ro \</p><p>-v /var/run:/var/run:rw \</p><p>-v /sys:/sys:ro \</p><p>-v /var/lib/docker/:/var/lib/docker:ro \</p><p>--name agent \</p><p>172.30.248.190:5000/domeos/agent:2.5</p><p><strong>&#x9A8C;&#x8BC1;</strong></p><p>&#x901A;&#x8FC7;curl -s localhost:<_agent_http_port>/health&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x82E5;&#x8FD0;&#x884C;&#x6B63;&#x5E38;&#x5C06;&#x8FD4;&#x56DE;ok&#x3002;</_agent_http_port></p><h1 id="domeostransfer">domeos/transfer</h1><p>TrcloudOS&#x4F7F;&#x7528;open-falcon&#x539F;&#x751F;&#x7684;transfer&#x7EC4;&#x4EF6;&#xFF0C;&#x4EC5;&#x5C06;g.go&#x6587;&#x4EF6;&#x4E2D;&#x7684;MIN_STEP&#x5E38;&#x91CF;&#x66F4;&#x65B0;&#x4E3A;10&#xFF0C;&#x6700;&#x5C0F;&#x76D1;&#x63A7;&#x6570;&#x636E;&#x53D6;&#x6837;&#x95F4;&#x9694;10s&#x3002;&#x5B9E;&#x9645;&#x90E8;&#x7F72;&#x65F6;&#xFF0C;transfer&#x7EC4;&#x4EF6;&#x53EF;&#x5728;&#x591A;&#x53F0;&#x4E3B;&#x673A;&#x4E0A;&#x914D;&#x7F6E;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x9700;&#x8981;&#x5728;agent&#x4E2D;&#x914D;&#x7F6E;&#x6B63;&#x786E;&#x7684;transfer&#x5730;&#x5740;&#x3002;</p><p><strong>&#x542F;&#x52A8;&#x547D;&#x4EE4;</strong></p><p><code>sudo docker run -d --restart=always \ -p &lt;_transfer_http_port&gt;:6060 \ -p &lt;_transfer_rpc_port&gt;:8433 \ -e JUDGE_CLUSTER=&quot;&lt;_judge_cluster&gt;&quot; \ -e GRAPH_CLUSTER=&quot;&lt;_graph_cluster&gt;&quot; \ --name transfer \ 172.30.248.190:5000/domeos/transfer:0.0.15</code></p><p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p><p><code>_transfer_http_port: transfer&#x670D;&#x52A1;http&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x3001;&#x8C03;&#x8BD5;&#x7B49;&#x3002;</code></p><p><code>_transfer_rpc_port: transfer&#x670D;&#x52A1;rpc&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x63A5;&#x6536;agent&#x4E0A;&#x62A5;&#x76D1;&#x63A7;&#x6570;&#x636E;&#x3002;</code></p><p><code>_judge_cluster: judge&#x670D;&#x52A1;&#x8282;&#x70B9;&#x5217;&#x8868;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;&#x952E;&#x503C;&#x5BF9;&#xFF0C;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;</code></p><p><code>_graph_cluster: graph&#x670D;&#x52A1;&#x8282;&#x70B9;&#x5217;&#x8868;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;&#x952E;&#x503C;&#x5BF9;&#xFF0C;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;</code></p><p>&#x5176;&#x4F59;&#x53C2;&#x6570;&#x53EF;&#x53C2;&#x7167;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;docker/cfg.template.json&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p><p><strong>&#x6837;&#x4F8B;</strong></p><p><code>sudo docker run -d --restart=always \ -p 6060:6060 \ -p 8433:8433 \ -e JUDGE_CLUSTER=&quot;\&quot;judge-00\&quot; : \&quot;10.10.10.10:6080\&quot;, \&quot;judge-01\&quot; : \&quot;10.10.10.11:6080\&quot;&quot; \ -e GRAPH_CLUSTER=&quot;\&quot;graph-00\&quot; : \&quot;10.10.10.10:6070\&quot;, \&quot;graph-01\&quot; : \&quot;10.10.10.11:6070\&quot;&quot; \ --name transfer \ 172.30.248.190:5000/domeos/transfer:0.0.15</code></p><p><strong>&#x9A8C;&#x8BC1;</strong></p><p>&#x901A;&#x8FC7;curl -s localhost:<_transfer_http_port>/health&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x82E5;&#x8FD0;&#x884C;&#x6B63;&#x5E38;&#x5C06;&#x8FD4;&#x56DE;ok&#x3002;</_transfer_http_port></p><h1 id="domeosgraph">domeos/graph</h1><p>TrcloudOS&#x4F7F;&#x7528;open-falcon&#x539F;&#x751F;&#x7684;graph&#x7EC4;&#x4EF6;&#xFF0C;&#x4EC5;&#x5C06;g.go&#x6587;&#x4EF6;&#x4E2D;&#x7684;MIN_STEP&#x5E38;&#x91CF;&#x66F4;&#x65B0;&#x4E3A;10&#xFF0C;&#x6700;&#x5C0F;&#x76D1;&#x63A7;&#x6570;&#x636E;&#x53D6;&#x6837;&#x95F4;&#x9694;10s&#x3002;&#x5B9E;&#x9645;&#x90E8;&#x7F72;&#x65F6;&#xFF0C;graph&#x7EC4;&#x4EF6;&#x53EF;&#x5728;&#x591A;&#x53F0;&#x4E3B;&#x673A;&#x4E0A;&#x914D;&#x7F6E;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x9700;&#x8981;&#x5728;transfer&#x548C;query&#x4E2D;&#x914D;&#x7F6E;&#x6B63;&#x786E;&#x7684;graph&#x5730;&#x5740;&#x3002;</p><p><strong>&#x542F;&#x52A8;&#x547D;&#x4EE4;</strong></p><p>`sudo docker run -d --restart=always \</p><p>-p <_graph_http_port>:6071 \</_graph_http_port></p><p>-p <_graph_rpc_port>:6070 \</_graph_rpc_port></p><p>-v <_graph_data_path>:/home/work/data/6070 \</_graph_data_path></p><p>-e DB_DSN=&quot;\&quot;<_graph_db_user>:&lt;_graph_db_passwd&gt;@tcp(<_graph_db_addr>)/graph?loc=Local&amp;parseTime=true\&quot;&quot; \</_graph_db_addr></_graph_db_user></p><p>--name graph \ 172.30.248.190:5000/domeos/graph:0.5.7`</p><p><strong>&#x4E3B;&#x8981;&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A;</strong></p><p><code>_graph_http_port: graph&#x670D;&#x52A1;http&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x3001;&#x8C03;&#x8BD5;&#x7B49;&#x3002;</code></p><p><code>_graph_rpc_port: graph&#x670D;&#x52A1;rpc&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x4E0E;transfer&#x548C;query&#x4EA4;&#x4E92;&#x3002;</code></p><p><code>_graph_data_path: graph&#x6570;&#x636E;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;&#x3002;</code></p><p><code>_graph_db_user: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;</code></p><p><code>_graph_db_passwd: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x5BC6;&#x7801;&#x3002;</code></p><p><code>_graph_db_addr: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002;</code></p><p>&#x5176;&#x4F59;&#x53C2;&#x6570;&#x53EF;&#x53C2;&#x7167;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;docker/cfg.template.json&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p><p><strong>&#x6837;&#x4F8B;</strong></p><p><code>sudo docker run -d --restart=always \ -p 6071:6071 \ -p 6070:6070 \ -v /opt/graph/data:/home/work/data/6070 \ -e DB_DSN=&quot;\&quot;root:root@tcp(10.10.10.10:3306)/graph?loc=Local&amp;parseTime=true\&quot;&quot; \ --name graph \ 172.30.248.190:5000/domeos/graph:0.5.7</code></p><p><strong>&#x9A8C;&#x8BC1;</strong></p><p>&#x901A;&#x8FC7;curl -s localhost:<_graph_http_port>/health&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x82E5;&#x8FD0;&#x884C;&#x6B63;&#x5E38;&#x5C06;&#x8FD4;&#x56DE;ok&#x3002;</_graph_http_port></p><h1 id="domeosquery">domeos/query</h1><p>TrcloudOS&#x4F7F;&#x7528;open-falcon&#x539F;&#x751F;&#x7684;query&#x7EC4;&#x4EF6;&#x3002;&#x5B9E;&#x9645;&#x90E8;&#x7F72;&#x65F6;&#xFF0C;query&#x7EC4;&#x4EF6;&#x53EA;&#x9700;&#x914D;&#x7F6E;&#x5355;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;</p><p><strong>&#x542F;&#x52A8;&#x547D;&#x4EE4;</strong></p><p><code>sudo docker run -d --restart=always \ -p &lt;_query_http_port&gt;:9966 \ -e GRAPH_CLUSTER=&quot;&lt;_graph_cluster&gt;&quot; \ --name query \ 172.30.248.190:5000/domeos/query:1.5.1</code></p><p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p><p><code>_query_http_port: query&#x670D;&#x52A1;http&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x67E5;&#x8BE2;&#x76D1;&#x63A7;&#x6570;&#x636E;&#x3001;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x3001;&#x8C03;&#x8BD5;&#x7B49;&#x3002; _graph_cluster: graph&#x670D;&#x52A1;&#x8282;&#x70B9;&#x5217;&#x8868;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;&#x952E;&#x503C;&#x5BF9;&#xFF0C;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;&#x6CE8;&#x610F;&#x4E00;&#x5B9A;&#x8981;&#x4E0E;transfer&#x4E2D;&#x914D;&#x7F6E;&#x7684;_graph_cluster&#x76F8;&#x540C;&#x3002;</code></p><p>&#x5176;&#x4F59;&#x53C2;&#x6570;&#x53EF;&#x53C2;&#x7167;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;docker/cfg.template.json&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p><p><strong>&#x6837;&#x4F8B;</strong></p><p><code>sudo docker run -d --restart=always \ -p 9966:9966 \ -e GRAPH_CLUSTER=&quot;\&quot;graph-00\&quot; : \&quot;10.10.10.10:6070\&quot;, \&quot;graph-01\&quot; : \&quot;10.10.10.11:6070\&quot;&quot; \ --name query \ 172.30.248.190:5000/domeos/query:1.5.1</code></p><p><strong>&#x9A8C;&#x8BC1;</strong></p><p>&#x901A;&#x8FC7;curl -s localhost:<_query_http_port>/health&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x82E5;&#x8FD0;&#x884C;&#x6B63;&#x5E38;&#x5C06;&#x8FD4;&#x56DE;ok&#x3002;</_query_http_port></p><h1 id="domeoshbs">domeos/hbs</h1><p>TrcloudOS&#x4F7F;&#x7528;open-falcon&#x539F;&#x751F;&#x7684;&#x5FC3;&#x8DF3;&#x670D;&#x52A1;&#x5668;(hbs)&#x7EC4;&#x4EF6;&#x3002;&#x5B9E;&#x9645;&#x90E8;&#x7F72;&#x65F6;&#xFF0C;hbs&#x7EC4;&#x4EF6;&#x53EA;&#x9700;&#x914D;&#x7F6E;&#x5355;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;</p><p><strong>&#x542F;&#x52A8;&#x547D;&#x4EE4;</strong></p><p><code>sudo docker run -d --restart=always \ -p &lt;_hbs_http_port&gt;:6031 \ -p &lt;_hbs_rpc_port&gt;:6030 \ -e DATABASE=&quot;\&quot;&lt;_portal_db_user&gt;:&lt;_portal_db_passwd&gt;@tcp(&lt;_portal_db_addr&gt;)/portal?loc=Local&amp;parseTime=true\&quot;&quot; \ --name hbs \ 172.30.248.190:5000/domeos/hbs:1.1.0</code></p><p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p><p><code>_hbs_http_port: hbs&#x670D;&#x52A1;http&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x3001;&#x8C03;&#x8BD5;&#x7B49;&#x3002;</code></p><p><code>_hbs_rpc_port: hbs&#x670D;&#x52A1;rpc&#x76D1;&#x542C;&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x76D1;&#x542C;agent&#x7684;&#x4E0A;&#x62A5;&#x6570;&#x636E;&#x3002;</code></p><p><code>_portal_db_user: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;</code></p><p><code>_portal_db_passwd: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x5BC6;&#x7801;&#x3002;</code></p><p><code>_portal_db_addr: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002;</code></p><p>&#x5176;&#x4F59;&#x53C2;&#x6570;&#x53EF;&#x53C2;&#x7167;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;docker/cfg.template.json&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p><p><strong>&#x6837;&#x4F8B;</strong></p><p><code>sudo docker run -d --restart=always \ -p 6031:6031 \ -p 6030:6030 \ -e DATABASE=&quot;\&quot;root:root@tcp(10.10.10.10:3306)/portal?loc=Local&amp;parseTime=true\&quot;&quot; \ --name hbs \ 172.30.248.190:5000/domeos/hbs:1.1.0</code></p><p><strong>&#x9A8C;&#x8BC1;</strong></p><p>&#x901A;&#x8FC7;curl -s localhost:<_hbs_http_port>/health&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x82E5;&#x8FD0;&#x884C;&#x6B63;&#x5E38;&#x5C06;&#x8FD4;&#x56DE;ok&#x3002;</_hbs_http_port></p><h1 id="domeosjudge">domeos/judge</h1><p>TrcloudOS&#x4F7F;&#x7528;open-falcon&#x539F;&#x751F;&#x7684;judge&#x7EC4;&#x4EF6;&#x3002;&#x5B9E;&#x9645;&#x90E8;&#x7F72;&#x65F6;&#xFF0C;judge&#x7EC4;&#x4EF6;&#x53EF;&#x5728;&#x591A;&#x53F0;&#x4E3B;&#x673A;&#x4E0A;&#x914D;&#x7F6E;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;</p><p><strong>&#x542F;&#x52A8;&#x547D;&#x4EE4;</strong></p><p><code>sudo docker run -d --restart=always \ -p &lt;_judge_http_port&gt;:6081 \ -p &lt;_judge_rpc_port&gt;:6080 \ -e HBS_SERVERS=&quot;[\&quot;&lt;_hbs_server&gt;\&quot;]&quot; \ -e ALARM_REDIS_DSN=&quot;\&quot;&lt;_redis&gt;\&quot;&quot; \ --name judge \ 172.30.248.190:5000/domeos/judge:2.0.2</code></p><p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p><p>_judge_http_port: judge&#x670D;&#x52A1;http&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x3001;&#x8C03;&#x8BD5;&#x7B49;&#x3002; _judge_rpc_port: hbs&#x670D;&#x52A1;rpc&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x4E0E;transfer&#x7684;&#x4EA4;&#x4E92;&#x3002; _hbs_server: &#x5FC3;&#x8DF3;&#x670D;&#x52A1;&#x5668;(hbs)rpc&#x76D1;&#x542C;&#x5730;&#x5740;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002; _redis: &#x7528;&#x4E8E;&#x62A5;&#x8B66;&#x7684;redis&#x670D;&#x52A1;&#x5730;&#x5740;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002;</p><p>&#x5176;&#x4F59;&#x53C2;&#x6570;&#x53EF;&#x53C2;&#x7167;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;docker/cfg.template.json&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p><p><strong>&#x6837;&#x4F8B;</strong></p><p><code>sudo docker run -d --restart=always \ -p 6081:6081 \ -p 6080:6080 \ -e HBS_SERVERS=&quot;[\&quot;10.10.10.10:6030\&quot;]&quot; \ -e ALARM_REDIS_DSN=&quot;\&quot;10.10.10.10:6379\&quot;&quot; \ --name judge \ 172.30.248.190:5000/domeos/judge:2.0.2</code></p><p><strong>&#x9A8C;&#x8BC1;</strong></p><p>&#x901A;&#x8FC7;curl -s localhost:<_judge_http_port>/health&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x82E5;&#x8FD0;&#x884C;&#x6B63;&#x5E38;&#x5C06;&#x8FD4;&#x56DE;ok&#x3002;</_judge_http_port></p><h1 id="domeosalarm">domeos/alarm</h1><p>domeos/alarm&#x6A21;&#x5757;&#x662F;&#x4EE5;open-falcon&#x539F;&#x751F;alarm&#x6A21;&#x5757;&#x4E3A;&#x57FA;&#x7840;&#xFF0C;&#x4E3A;&#x9002;&#x5E94;TrcloudOS&#x76D1;&#x63A7;&#x62A5;&#x8B66;&#x9700;&#x6C42;&#x800C;&#x8BBE;&#x8BA1;&#x4FEE;&#x6539;&#x7684;&#x3002;&#x5B9E;&#x9645;&#x90E8;&#x7F72;&#x65F6;&#xFF0C;alarm&#x7EC4;&#x4EF6;&#x53EA;&#x9700;&#x914D;&#x7F6E;&#x5355;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;&#x5728;TrcloudOS&#x4E2D;&#xFF0C;&#x4E0D;&#x518D;&#x5355;&#x72EC;&#x90E8;&#x7F72;portal&#x6A21;&#x5757;&#xFF0C;&#x62A5;&#x8B66;&#x7B56;&#x7565;&#x4FE1;&#x606F;&#x7531;TrcloudOS&#x62A5;&#x8B66;&#x6A21;&#x5757;&#x63D0;&#x4F9B;&#x5E76;&#x5199;&#x5165;portal&#x5E93;&#xFF0C;&#x4F9B;hbs&#x8BFB;&#x53D6;&#x3002;alarm&#x4ECE;redis&#x4E2D;&#x83B7;&#x53D6;&#x62A5;&#x8B66;event&#x540E;&#x5C06;&#x4FDD;&#x5B58;&#x81F3;TrcloudOS&#x6570;&#x636E;&#x5E93;&#xFF0C; &#x4EE5;&#x63D0;&#x4F9B;TrcloudOS&#x524D;&#x7AEF;&#x5C55;&#x793A;&#x62A5;&#x8B66;&#x4FE1;&#x606F;&#x3002;</p><p><strong>&#x542F;&#x52A8;&#x547D;&#x4EE4;</strong></p><p><code>sudo docker run -d --restart=always \ -p &lt;_alarm_http_port&gt;:9912 \ -e DATABASE=&quot;\&quot;&lt;_domeos_db_user&gt;:&lt;_domeos_db_passwd&gt;@tcp(&lt;_domeos_db_addr&gt;)/domeos?loc=Local&amp;parseTime=true\&quot;&quot; \ -e REDIS_ADDR=&quot;\&quot;&lt;_redis&gt;\&quot;&quot; \ -e API_DOMEOS=&quot;\&quot;&lt;_domeos_server&gt;\&quot;&quot; \ --name alarm \ 172.30.248.190:5000/domeos/alarm:1.0</code></p><p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p><p>_alarm_http_port: alarm&#x670D;&#x52A1;http&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x3001;&#x8C03;&#x8BD5;&#x7B49;&#x3002; _domeos_db_user: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002; _domeos_db_passwd: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x5BC6;&#x7801;&#x3002; _domeos_db_addr: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002; _redis: &#x7528;&#x4E8E;&#x62A5;&#x8B66;&#x7684;redis&#x670D;&#x52A1;&#x5730;&#x5740;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002; _domeos_server: TrcloudOS&#x7684;server&#x5730;&#x5740;&#x3002;</p><p>&#x5176;&#x4F59;&#x53C2;&#x6570;&#x53EF;&#x53C2;&#x7167;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;docker/cfg.template.json&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p><p><strong>&#x6837;&#x4F8B;</strong></p><p><code>sudo docker run -d --restart=always \ -p 9912:9912 \ -e DATABASE=&quot;\&quot;root:root@tcp(10.10.10.10:3306)/domeos?loc=Local&amp;parseTime=true\&quot;&quot; \ -e REDIS_ADDR=&quot;\&quot;10.10.10.10:6379\&quot;&quot; \ -e API_DOMEOS=&quot;\&quot;http://domeos.example.com\&quot;&quot; \ --name alarm \ 172.30.248.190:5000/domeos/alarm:1.0</code></p><p><strong>&#x9A8C;&#x8BC1;</strong></p><p>&#x901A;&#x8FC7;curl -s localhost:<_alarm_http_port>/health&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x82E5;&#x8FD0;&#x884C;&#x6B63;&#x5E38;&#x5C06;&#x8FD4;&#x56DE;ok&#x3002;</_alarm_http_port></p><h1 id="domeossender">domeos/sender</h1><p>domeos/sender&#x6A21;&#x5757;&#x662F;&#x4EE5;open-falcon&#x539F;&#x751F;sender&#x6A21;&#x5757;&#x4E3A;&#x57FA;&#x7840;&#xFF0C;&#x4E3A;&#x9002;&#x5E94;TrcloudOS&#x76D1;&#x63A7;&#x62A5;&#x8B66;&#x9700;&#x6C42;&#x800C;&#x8BBE;&#x8BA1;&#x4FEE;&#x6539;&#x7684;&#x3002;&#x5B9E;&#x9645;&#x90E8;&#x7F72;&#x65F6;&#xFF0C;sender&#x7EC4;&#x4EF6;&#x53EA;&#x9700;&#x914D;&#x7F6E;&#x5355;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;</p><p>&#x5728;TrcloudOS&#x4E2D;&#xFF0C;api:sms&#x548C;api:mail&#x6539;&#x4E3A;&#x7531;TrcloudOS&#x7684;&#x6570;&#x636E;&#x5E93;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x4E2D;&#x8BFB;&#x53D6;&#x5F97;&#x5230;&#x3002;&#x5F53;TrcloudOS&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x6539;&#x53D8;&#x65F6;TrcloudOS&#x670D;&#x52A1;&#x5668;&#x5C06;&#x4E3B;&#x52A8;&#x8C03;&#x7528;sender&#x63A5;&#x53E3;/config/api/reload &#x4ECE;TrcloudOS&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x66F4;&#x65B0;&#x65B0;&#x7684;&#x77ED;&#x4FE1;&#x548C;&#x90AE;&#x4EF6;API&#x63A5;&#x53E3;&#xFF1B;&#x540C;&#x65F6;sender&#x4E5F;&#x4F1A;&#x6BCF;&#x9694;60s&#x81EA;&#x52A8;&#x5411;TrcloudOS&#x6570;&#x636E;&#x5E93;&#x62C9;&#x53D6;&#x77ED;&#x4FE1;&#x548C;&#x90AE;&#x4EF6;API&#x63A5;&#x53E3;&#x3002;</p><p>&#x6CE8;&#x610F;&#xFF1A;api:sms&#x548C;api:mail&#x9700;&#x8981;&#x6EE1;&#x8DB3;open-falcon&#x5B9A;&#x5236;&#x7684;&#x63A5;&#x53E3;&#x89C4;&#x8303;&#xFF0C;&#x5177;&#x4F53;&#x89C1;&#x5B98;&#x65B9;github&#x4E2D;&#x7684;&#x76F8;&#x5173;&#x8BF4;&#x660E;&#x3002;</p><p><strong>&#x542F;&#x52A8;&#x547D;&#x4EE4;</strong></p><p><code>sudo docker run -d --restart=always \ -p &lt;_sender_http_port&gt;:6066 \ -e DATABASE=&quot;\&quot;&lt;_domeos_db_user&gt;:&lt;_domeos_db_passwd&gt;@tcp(&lt;_domeos_db_addr&gt;)/domeos?loc=Local&amp;parseTime=true\&quot;&quot; \ -e REDIS_ADDR=&quot;\&quot;&lt;_redis&gt;\&quot;&quot; \ --name sender \ 172.30.248.190:5000/domeos/sender:1.0</code></p><p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p><p>_sender_http_port: sender&#x670D;&#x52A1;http&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x3001;&#x8C03;&#x8BD5;&#x7B49;&#x3002; _domeos_db_user: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002; _domeos_db_passwd: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x5BC6;&#x7801;&#x3002; _domeos_db_addr: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002; _redis: &#x7528;&#x4E8E;&#x62A5;&#x8B66;&#x7684;redis&#x670D;&#x52A1;&#x5730;&#x5740;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002;</p><p>&#x5176;&#x4F59;&#x53C2;&#x6570;&#x53EF;&#x53C2;&#x7167;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;docker/cfg.template.json&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p><p><strong>&#x6837;&#x4F8B;</strong></p><p><code>sudo docker run -d --restart=always \ -p 6066:6066 \ -e DATABASE=&quot;\&quot;root:root@tcp(10.10.10.10:3306)/domeos?loc=Local&amp;parseTime=true\&quot;&quot; \ -e REDIS_ADDR=&quot;\&quot;10.10.10.10:6379\&quot;&quot; \ --name sender \ 172.30.248.190:5000/domeos/sender:1.0</code></p><p><strong>&#x9A8C;&#x8BC1;</strong></p><p>&#x901A;&#x8FC7;curl -s localhost:<_sender_http_port>/health&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x82E5;&#x8FD0;&#x884C;&#x6B63;&#x5E38;&#x5C06;&#x8FD4;&#x56DE;ok&#x3002;</_sender_http_port></p><h1 id="domeosnodata">domeos/nodata</h1><p>TrcloudOS&#x4F7F;&#x7528;open-falcon&#x539F;&#x751F;&#x7684;nodata&#x7EC4;&#x4EF6;&#x3002;&#x5B9E;&#x9645;&#x90E8;&#x7F72;&#x65F6;&#xFF0C;nodata&#x7EC4;&#x4EF6;&#x53EA;&#x9700;&#x914D;&#x7F6E;&#x5355;&#x4E2A;&#x5B9E;&#x4F8B;&#x3002;</p><p><strong>&#x542F;&#x52A8;&#x547D;&#x4EE4;</strong></p><p><code>sudo docker run -d --restart=always \ -p &lt;_nodata_http_port&gt;:6090 \ -e QUERY_QUERYADDR=&quot;\&quot;&lt;_query&gt;\&quot;&quot; \ -e CONFIG_DSN=&quot;\&quot;&lt;_portal_db_user&gt;:&lt;_portal_db_passwd&gt;@tcp(&lt;_portal_db_addr&gt;)/portal?loc=Local&amp;parseTime=true\&quot;&quot; \ -e SENDER_TRANSFERADDR=&quot;\&quot;&lt;_transfer&gt;\&quot;&quot; \ --name nodata \ 172.30.248.190:5000/domeos/nodata:0.0.8</code></p><p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong></p><p><code>_nodata_http_port: nodata&#x670D;&#x52A1;http&#x7AEF;&#x53E3;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x72B6;&#x6001;&#x68C0;&#x6D4B;&#x3001;&#x8C03;&#x8BD5;&#x7B49;&#x3002;</code></p><p><code>_query: query&#x7EC4;&#x4EF6;&#x7684;http&#x5730;&#x5740;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002;</code></p><p><code>_portal_db_user: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;</code></p><p><code>_portal_db_passwd: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x5BC6;&#x7801;&#x3002;</code></p><p><code>_portal_db_addr: TrcloudOS&#x4E2D;MySQL&#x6570;&#x636E;&#x5E93;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002;</code></p><p><code>_transfer: transfer&#x7EC4;&#x4EF6;&#x7684;http&#x5730;&#x5740;&#xFF0C;&#x82E5;&#x90E8;&#x7F72;&#x591A;&#x4E2A;transfer&#x5219;&#x586B;&#x5199;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;IP:Port&#x3002;</code></p><p>&#x5176;&#x4F59;&#x53C2;&#x6570;&#x53EF;&#x53C2;&#x7167;&#x5DE5;&#x7A0B;&#x4E2D;&#x7684;docker/cfg.template.json&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x76F8;&#x5E94;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x3002;</p><p><strong>&#x6837;&#x4F8B;</strong></p><p><code>sudo docker run -d --restart=always \ -p 6090:6090 \ -e QUERY_QUERYADDR=&quot;\&quot;10.10.10.10:9966\&quot;&quot; \ -e CONFIG_DSN=&quot;\&quot;root:root@tcp(10.10.10.10:3306)/portal?loc=Local&amp;parseTime=true\&quot;&quot; \ -e SENDER_TRANSFERADDR=&quot;\&quot;10.10.10.10:6060\&quot;&quot; \ --name nodata \ 172.30.248.190:5000/domeos/nodata:0.0.8</code></p><p><strong>&#x9A8C;&#x8BC1;</strong></p><p>&#x901A;&#x8FC7;curl -s localhost:<_nodata_http_port>/health&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x82E5;&#x8FD0;&#x884C;&#x6B63;&#x5E38;&#x5C06;&#x8FD4;&#x56DE;ok&#x3002;</_nodata_http_port></p><h1 id="redis">redis</h1><p>redis&#x662F;&#x62A5;&#x8B66;&#x529F;&#x80FD;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x7684;&#x5FC5;&#x8981;&#x7EC4;&#x4EF6;&#x3002;&#x53EF;&#x7528;&#x5BB9;&#x5668;&#x65B9;&#x5F0F;&#x542F;&#x52A8;redis&#x670D;&#x52A1;&#xFF1A;</p><p><code>sudo docker run -d \ -p &lt;_redis_port&gt;:6379 \ 172.30.248.190:5000/domeos/redis:3.0.7 \ redis-server --timeout 300 --maxmemory 5gb --maxmemory-policy allkeys-lru --port 6379</code></p><p>&#x5176;&#x4E2D;_redis_port&#x4E3A;redis&#x670D;&#x52A1;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x7684;&#x670D;&#x52A1;&#x7AEF;&#x53E3;&#x3002;</p><h1 id="mysql&#x4E0E;redis&#x914D;&#x7F6E;&#x76F8;&#x5173;&#x8BF4;&#x660E;">MySQL&#x4E0E;redis&#x914D;&#x7F6E;&#x76F8;&#x5173;&#x8BF4;&#x660E;</h1><p>&#x90E8;&#x7F72;TrcloudOS&#x8BF4;&#x660E;&#x4E2D;&#x5DF2;&#x7ECF;&#x5305;&#x542B;MySQL&#x7684;&#x76F8;&#x5173;&#x914D;&#x7F6E;&#x3002;TrcloudOS&#x7684;MySQL&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5305;&#x542B;&#x4E09;&#x5F20;&#x8868;&#xFF1A;domeos&#x3001;graph&#x4E0E;portal&#x3002;&#x5176;&#x4E2D;domeos&#x662F;TrcloudOS server&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x8868;&#xFF0C;graph&#x4E0E;portal&#x662F;&#x4E3A;&#x4E86;&#x4E0E;open-falcon&#x517C;&#x5BB9;&#x800C;&#x5355;&#x72EC;&#x521B;&#x5EFA;&#x7684;&#x8868;&#x3002;&#x8FD9;&#x4E09;&#x5F20;&#x8868;&#x5728;TrcloudOS&#x76D1;&#x63A7;&#x62A5;&#x8B66;&#x7EC4;&#x4EF6;&#x4E2D;&#x90FD;&#x6709;&#x4F7F;&#x7528;&#xFF0C;&#x4E3A;&#x786E;&#x4FDD;&#x76D1;&#x63A7;&#x62A5;&#x8B66;&#x529F;&#x80FD;&#x6B63;&#x5E38;&#xFF0C;&#x52A1;&#x5FC5;&#x4FDD;&#x8BC1;TrcloudOS&#x6570;&#x636E;&#x5E93;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x53EF;&#x8BBF;&#x95EE;&#x3002;</p><p>Redis&#x7528;&#x4F5C;&#x62A5;&#x8B66;&#x4E8B;&#x4EF6;&#x7684;&#x961F;&#x5217;&#xFF0C;&#x8D77;&#x5230;&#x8054;&#x7CFB;judge&#x3001;alarm&#x548C;sender&#x7EC4;&#x4EF6;&#x7684;&#x5173;&#x952E;&#x4F5C;&#x7528;&#x3002;&#x4E3A;&#x786E;&#x4FDD;&#x62A5;&#x8B66;&#x529F;&#x80FD;&#x6B63;&#x5E38;&#xFF0C;&#x52A1;&#x5FC5;&#x4FDD;&#x8BC1;redis&#x7EC4;&#x4EF6;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x3002;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="qi_dong_dns_fu_wu.html" class="navigation navigation-prev " aria-label="Previous page: 启动DNS服务">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="pei_zhi_webssh_zu_jian.html" class="navigation navigation-next " aria-label="Next page: 配置WebSSH组件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"配置监控报警组件","level":"1.2.5","depth":2,"next":{"title":"配置WebSSH组件","level":"1.2.6","depth":2,"path":"pei_zhi_webssh_zu_jian.md","ref":"pei_zhi_webssh_zu_jian.md","articles":[]},"previous":{"title":"启动DNS服务","level":"1.2.4","depth":2,"path":"qi_dong_dns_fu_wu.md","ref":"qi_dong_dns_fu_wu.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pei_zhi_jian_kong_bao_jing_zu_jian.md","mtime":"2016-09-27T06:28:54.039Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-27T06:47:17.528Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

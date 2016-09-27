@@ -1,0 +1,351 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>配置控制台组件 · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="pei_zhi_si_you_jing_xiang_cang_ku.html" />
+    
+    
+    <link rel="prev" href="shou_dong_an_zhuang.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="shou_dong_an_zhuang.html">
+            
+                <a href="shou_dong_an_zhuang.html">
+            
+                    
+                    手动安装
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="pei_zhi_kong_zhi_tai_zu_jian.html">
+            
+                <a href="pei_zhi_kong_zhi_tai_zu_jian.html">
+            
+                    
+                    配置控制台组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="pei_zhi_si_you_jing_xiang_cang_ku.html">
+            
+                <a href="pei_zhi_si_you_jing_xiang_cang_ku.html">
+            
+                    
+                    配置私有镜像仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="chuang_jian_kubernetes_ji_qun.html">
+            
+                <a href="chuang_jian_kubernetes_ji_qun.html">
+            
+                    
+                    创建Kubernetes集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="qi_dong_dns_fu_wu.html">
+            
+                <a href="qi_dong_dns_fu_wu.html">
+            
+                    
+                    启动DNS服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="pei_zhi_jian_kong_bao_jing_zu_jian.html">
+            
+                <a href="pei_zhi_jian_kong_bao_jing_zu_jian.html">
+            
+                    
+                    配置监控报警组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="pei_zhi_webssh_zu_jian.html">
+            
+                <a href="pei_zhi_webssh_zu_jian.html">
+            
+                    
+                    配置WebSSH组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >配置控制台组件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x914D;&#x7F6E;&#x63A7;&#x5236;&#x53F0;&#x7EC4;&#x4EF6;">&#x914D;&#x7F6E;&#x63A7;&#x5236;&#x53F0;&#x7EC4;&#x4EF6;</h1><hr><h2 id="&#x914D;&#x7F6E;&#x5E76;&#x542F;&#x52A8;mysql">&#x914D;&#x7F6E;&#x5E76;&#x542F;&#x52A8;MySQL</h2><p>TrcloudOS&#x7684;&#x76F8;&#x5173;&#x6570;&#x636E;&#x5747;&#x5B58;&#x50A8;&#x5728;Mysql&#x4E2D;&#xFF0C;&#x53EF;&#x81EA;&#x884C;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x5BB9;&#x5668;&#x6216;&#x975E;&#x5BB9;&#x5668;&#x65B9;&#x5F0F;&#x542F;&#x52A8;MySQL&#xFF0C;Mysql&#x6210;&#x529F;&#x542F;&#x52A8;&#x540E;&#x9700;&#x521B;&#x5EFA;TrcloudOS&#x6240;&#x9700;&#x6570;&#x636E;&#x5E93;&#x548C;&#x8868;&#x7ED3;&#x6784;&#x3002;</p><h3 id="&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;">&#x64CD;&#x4F5C;&#x6B65;&#x9AA4;</h3><ol><li><p>&#x4E0B;&#x8F7D;<a href="http://172.30.251.187:12322/mysql-db/&#x76EE;&#x5F55;&#x4E0B;&#x7684;mysql-initialize.sh&#x548C;&#x6240;&#x6709;sql&#x6587;&#x4EF6;&#x81F3;&#x672C;&#x5730;&#x76EE;&#x5F55;&#xFF1B;" target="_blank">http://172.30.251.187:12322/mysql-db/&#x76EE;&#x5F55;&#x4E0B;&#x7684;mysql-initialize.sh&#x548C;&#x6240;&#x6709;sql&#x6587;&#x4EF6;&#x81F3;&#x672C;&#x5730;&#x76EE;&#x5F55;&#xFF1B;</a></p></li>
+<li><p>&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;&#x73AF;&#x5883;&#x53D8;&#x91CF;(&#x8981;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x6709;root&#x6743;&#x9650;)&#xFF1A;</p><p>MYSQL_HOST: MySQL&#x670D;&#x52A1;&#x5730;&#x5740;</p><p>MYSQL_PORT: MySQL&#x670D;&#x52A1;&#x7AEF;&#x53E3;</p><p>MYSQL_USERNAME: &#x7528;&#x4E8E;&#x767B;&#x5F55;MySQL&#x670D;&#x52A1;&#x5668;&#x7684;&#x7528;&#x6237;&#x540D;</p><p>MYSQL_PASSWORD: &#x7528;&#x4E8E;&#x767B;&#x5F55;MySQL&#x670D;&#x52A1;&#x5668;&#x7684;&#x5BC6;&#x7801;</p></li>
+<li><p>&#x6267;&#x884C;&#x811A;&#x672C;mysql-initialize.sh&#xFF0C;&#x5C06;&#x5728;MySQL&#x4E2D;&#x521B;&#x5EFA;domeos&#x3001;graph&#x3001;portal&#x4E09;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x4EE5;&#x53CA;&#x76F8;&#x5173;&#x6570;&#x636E;&#x8868;&#xFF0C;&#x5E76;&#x5411;&#x6570;&#x636E;&#x8868;&#x4E2D;&#x63D2;&#x5165;&#x521D;&#x59CB;&#x6570;&#x636E;&#xFF0C;&#x5EFA;&#x7ACB;&#x7BA1;&#x7406;&#x5458;&#x8D26;&#x6237;(&#x521D;&#x59CB;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x5747;&#x4E3A;admin)&#x3002;</p></li></ol>
+<h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3><p>&#x4E3A;&#x4FDD;&#x8BC1;TrcloudOS&#x5404;&#x7EC4;&#x4EF6;&#x6B63;&#x786E;&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x9700;&#x786E;&#x4FDD;&#x6570;&#x636E;&#x5E93;&#x7ED9;flannel&#x4E2D;&#x914D;&#x7F6E;&#x7684;IP&#x6BB5;(&#x5BB9;&#x5668;&#x7684;IP&#x5730;&#x5740;&#x6BB5;)&#x4EE5;&#x53CA;&#x542F;&#x52A8;Kubernetes master&#x65F6;&#x8BBE;&#x7F6E;&#x7684;--service-cluster-ip-range&#x5730;&#x5740;&#x6BB5;&#x6388;&#x6743;&#xFF0C;&#x4E14;&#x4E0E;&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;&#x76F8;&#x5173;&#x7684;&#x9632;&#x706B;&#x5899;&#x914D;&#x7F6E;&#x6B63;&#x786E;&#x3002;</p><h2 id="&#x914D;&#x7F6E;&#x5E76;&#x542F;&#x52A8;trcloudos-server">&#x914D;&#x7F6E;&#x5E76;&#x542F;&#x52A8;TrcloudOS Server</h2><p>&#x53EF;&#x81EA;&#x884C;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x5BB9;&#x5668;&#x6216;&#x975E;&#x5BB9;&#x5668;&#x65B9;&#x5F0F;&#x542F;&#x52A8;TrcloudOS Server&#x3002;</p><ul><li><p>&#x975E;&#x5BB9;&#x5668;&#x65B9;&#x5F0F;</p></li>
+<li><p>&#x4E0B;&#x8F7D;TrcloudOS&#x7684;war&#x5305;&#xFF0C;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A;<a href="http://172.30.251.187:12322/Trcloud-war/ROOT.war" target="_blank">http://172.30.251.187:12322/Trcloud-war/ROOT.war</a></p></li>
+<li><p>&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x5C06;ROOT.war&#x653E;&#x7F6E;&#x5728;tomcat&#x7684;/usr/local/tomcat/webapps&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x518D;&#x542F;&#x52A8;tomcat&#x670D;&#x52A1;:</p><p>MYSQL_HOST: MySQL&#x670D;&#x52A1;&#x5730;&#x5740;</p><p>MYSQL_PORT: MySQL&#x670D;&#x52A1;&#x7AEF;&#x53E3;</p><p>MYSQL_USERNAME: &#x7528;&#x4E8E;&#x767B;&#x5F55;MySQL&#x670D;&#x52A1;&#x5668;&#x7684;&#x7528;&#x6237;&#x540D;</p><p>MYSQL_PASSWORD: &#x7528;&#x4E8E;&#x767B;&#x5F55;MySQL&#x670D;&#x52A1;&#x5668;&#x7684;&#x5BC6;&#x7801;</p><p>MYSQL_DB: TrcloudOS&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x5E93;&#x540D;&#xFF0C;&#x82E5;&#x4F7F;&#x7528;mysql-initialize.sh&#x8FDB;&#x884C;MySQL&#x7684;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6B64;&#x6570;&#x636E;&#x5E93;&#x540D;&#x5E94;&#x4E3A;&quot;domeos&quot;</p></li>
+<li><p>&#x4EE5;&#x975E;&#x5BB9;&#x5668;&#x5F62;&#x5F0F;&#x542F;&#x52A8;TrcloudOS Server&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x5355;&#x72EC;&#x542F;&#x52A8;WebSSH Server&#xFF0C;&#x5177;&#x4F53;&#x542F;&#x52A8;&#x65B9;&#x5F0F;&#x89C1;&quot;&#x914D;&#x7F6E;WebSSH&#x7EC4;&#x4EF6;&quot;&#x7AE0;&#x8282;&#x3002;</p></li></ul>
+<p>&#x542F;&#x52A8;&#x6210;&#x529F;&#x540E;&#x53EF;&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;TrcloudOS&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x3002;</p><ul><li>&#x5BB9;&#x5668;&#x65B9;&#x5F0F;
+</li></ul>
+<h3 id="&#x955C;&#x50CF;">&#x955C;&#x50CF;</h3><p>172.30.248.190:5000/trcloud_modify:0.3</p><h3 id="&#x542F;&#x52A8;&#x547D;&#x4EE4;">&#x542F;&#x52A8;&#x547D;&#x4EE4;</h3><p>sudo docker run -d --restart=always \</p><pre><code>--name &lt;_trcloudos_server_name&gt; \
+-p &lt;_trcloudos_server_port&gt;:8080 \
+-e MYSQL_HOST=&lt;_mysql_host&gt; \
+-e MYSQL_PORT=&lt;_mysql_port&gt; \
+-e MYSQL_USERNAME=&lt;_mysql_username&gt; \
+-e MYSQL_PASSWORD=&lt;_mysql_password&gt; \
+-e MYSQL_DB=&lt;_mysql_db&gt; \
+172.30.248.190:5000/trcloud_modify:0.3</code></pre>
+<h3 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;</h3><p>_trcloudos_server_name: &#x5BB9;&#x5668;&#x7684;&#x540D;&#x5B57;</p><p>_trcloudos_server_port: TrcloudOS Server&#x7684;&#x670D;&#x52A1;&#x7AEF;&#x53E3;</p><p>_mysql_host: MySQL&#x670D;&#x52A1;&#x5730;&#x5740;</p><p>_mysql_port: MySQL&#x670D;&#x52A1;&#x7AEF;&#x53E3;</p><p>_mysql_username: &#x7528;&#x4E8E;&#x767B;&#x5F55;MySQL&#x670D;&#x52A1;&#x5668;&#x7684;&#x7528;&#x6237;&#x540D;</p><p>_mysql_password: &#x7528;&#x4E8E;&#x767B;&#x5F55;MySQL&#x670D;&#x52A1;&#x5668;&#x7684;&#x5BC6;&#x7801;</p><p>_mysql_db: TrcloudOS&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x5E93;&#x540D;&#xFF0C;&#x82E5;&#x4F7F;&#x7528;mysql-initialize.sh&#x8FDB;&#x884C;MySQL&#x7684;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6B64;&#x6570;&#x636E;&#x5E93;&#x540D;&#x5E94;&#x4E3A;&quot;domeos&quot;</p><h3 id="&#x6837;&#x4F8B;">&#x6837;&#x4F8B;</h3><p>sudo docker run -d --restart=always \</p><pre><code>--name trcloud_server \
+-p 8080:8080 \
+-e MYSQL_HOST=10.10.10.10 \
+-e MYSQL_PORT=3306 \
+-e MYSQL_USERNAME=root \
+-e MYSQL_PASSWORD=mypassword \
+-e MYSQL_DB=domeos \</code></pre>
+<p>172.30.248.190:5000/trcloud_modify:0.3</p><h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3><p>&#x955C;&#x50CF;&#x542F;&#x52A8;&#x65F6;&#x8BBE;&#x7F6E;&#x4E86;--restart-always&#xFF0C;&#x8BF7;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x9700;&#x6C42;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x3002;</p><h2 id="&#x9A8C;&#x8BC1;">&#x9A8C;&#x8BC1;</h2><p>&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8BBF;&#x95EE;TrcloudOS Server&#x5730;&#x5740;&#xFF0C;&#x5C06;&#x4F1A;&#x8FDB;&#x5165;TrcloudOS&#x767B;&#x5F55;&#x754C;&#x9762;&#xFF1A;
+<img src="denglu.png"></p><p>&#x9009;&#x62E9;&#x666E;&#x901A;&#x8D26;&#x6237;&#x767B;&#x5F55;&#xFF0C;&#x8F93;&#x5165;&#x521D;&#x59CB;&#x7528;&#x6237;&#x540D;admin&#x548C;&#x521D;&#x59CB;&#x5BC6;&#x7801;admin&#xFF0C;&#x70B9;&#x51FB;&#x767B;&#x5F55;&#x5373;&#x53EF;&#x8FDB;&#x5165;TrcloudOS&#x4E3B;&#x754C;&#x9762;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;TrcloudOS&#x7684;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#xFF1A;</p><p><img src="shouye.png"></p><p>&#x81F3;&#x6B64;TrcloudOS Server&#x5DF2;&#x6210;&#x529F;&#x914D;&#x7F6E;&#x5E76;&#x542F;&#x52A8;&#x3002;</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="shou_dong_an_zhuang.html" class="navigation navigation-prev " aria-label="Previous page: 手动安装">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="pei_zhi_si_you_jing_xiang_cang_ku.html" class="navigation navigation-next " aria-label="Next page: 配置私有镜像仓库">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"配置控制台组件","level":"1.2.1","depth":2,"next":{"title":"配置私有镜像仓库","level":"1.2.2","depth":2,"path":"pei_zhi_si_you_jing_xiang_cang_ku.md","ref":"pei_zhi_si_you_jing_xiang_cang_ku.md","articles":[]},"previous":{"title":"手动安装","level":"1.2","depth":1,"path":"shou_dong_an_zhuang.md","ref":"shou_dong_an_zhuang.md","articles":[{"title":"配置控制台组件","level":"1.2.1","depth":2,"path":"pei_zhi_kong_zhi_tai_zu_jian.md","ref":"pei_zhi_kong_zhi_tai_zu_jian.md","articles":[]},{"title":"配置私有镜像仓库","level":"1.2.2","depth":2,"path":"pei_zhi_si_you_jing_xiang_cang_ku.md","ref":"pei_zhi_si_you_jing_xiang_cang_ku.md","articles":[]},{"title":"创建Kubernetes集群","level":"1.2.3","depth":2,"path":"chuang_jian_kubernetes_ji_qun.md","ref":"chuang_jian_kubernetes_ji_qun.md","articles":[]},{"title":"启动DNS服务","level":"1.2.4","depth":2,"path":"qi_dong_dns_fu_wu.md","ref":"qi_dong_dns_fu_wu.md","articles":[]},{"title":"配置监控报警组件","level":"1.2.5","depth":2,"path":"pei_zhi_jian_kong_bao_jing_zu_jian.md","ref":"pei_zhi_jian_kong_bao_jing_zu_jian.md","articles":[]},{"title":"配置WebSSH组件","level":"1.2.6","depth":2,"path":"pei_zhi_webssh_zu_jian.md","ref":"pei_zhi_webssh_zu_jian.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pei_zhi_kong_zhi_tai_zu_jian.md","mtime":"2016-09-27T06:28:54.039Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-27T06:47:17.528Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
